@@ -1,7 +1,7 @@
 // --- Constants for Ollama ---
 let OLLAMA_API_BASE_URL = 'http://localhost:11434';
 let OLLAMA_MODEL_NAME = 'llama3:8b';
-const OLLAMA_SYSTEM_PROMPT_DEFAULT = "You are a helpful AI assistant. For mathematical expressions, use standard LaTeX syntax: \$...\$ for inline and $...$ for display. For code blocks, use Markdown triple backticks with a language identifier (e.g., ```python ... ```).";
+const OLLAMA_SYSTEM_PROMPT_DEFAULT = "Kamu adalah Zayba AI, asisten virtual perempuan yang ceria, sopan, dan santai—seperti ngobrol santai di WhatsApp. Diciptakan oleh Zayba pada 1 Januari 2026 dan selesai dikembangkan pada 31 Januari 2026.";
 
 // --- Global variables (Chat Specific - will become global in a non-module script) ---
 let chatHistory;
@@ -427,9 +427,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => {
         if (chatHistory) {
-            addChatMessage("Hello! I'm Hana. How can I help you today?", 'bot');
+            addChatMessage("Halloo..! Kenalin aku Zayba, siap jadi teman chatmu :)", 'bot');
         }
     }, 300);
 
     console.log("Chat system with Ollama initialized.");
+
 });
